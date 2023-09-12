@@ -1,0 +1,23 @@
+.main{
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 120px;
+    .css-o69gx8-MuiCardMedia-root{
+        min-width: 390px;
+    }
+    .css-1pprig2-MuiPaper-root-MuiCard-root{
+        margin: 10px 10px;
+    }
+    h3{
+        width: 100%;
+        height: 300px;
+        margin: 50px 0; 
+    }
+    h1{
+        font-size: 25px;
+        margin-left: 10px;
+    }
+}

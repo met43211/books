@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import 'main.scss';
+.wrapper{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+footer, header{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
+    align-items: center;
+    .header-inner, .footer-inner{
+        max-width: 1440px;
+        width:100%;
+        padding: 0 120px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+header{
+    height: 100px;
+    margin-bottom: 30px;
+    .header-inner{
+        a{
+            text-decoration: none;
+            color: #FFF;
+        }
+    }
+}
+footer{
+    margin-top: 50px;
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
+    .footer-inner{
+        a{
+            text-decoration: none;
+            color: #FFF;
+        }
+        h3{
+            margin-top: 35px;
+        }
+    }
+}
+.error-h{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.radio{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.filter{
+    justify-content: flex-start;
+}
+.jc-start{
+    justify-content: flex-start;
+}
+.jc-start .card:last-child{
+    margin-left: 20px;
+}
+.mb{
+    margin-bottom: 15px;
+    margin-top: -15px;
+}
+.error{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+@media(max-width:1040px){
+    footer, header{
+        .header-inner, .footer-inner{
+            padding: 0 20px;
+        }
+    }
+    .main{
+        padding: 0 20px;
+    }
+    .filter{
+        justify-content: flex-start;
+    }
+}
+@media(max-width:860px){
+    .main{
+        justify-content: center;
+    }
+    .mb{
+        justify-content: flex-start;
+    }
+    .filter{
+        justify-content: center;
+    }
+    .css-8bt9qh-MuiPaper-root-MuiCard-root{
+        margin: 10px;
+    }
+}
+@media(max-width:900px){
+    .film-page-card{
+        flex-direction: column!important;
+        align-items: center;
+        text-align: center;
+        img{
+            max-width: 100%!important;
+        }
+        .css-rmcjrs-MuiCardContent-root:last-child{
+            margin-right: 0px;
+            width: 100%;
+            padding: 20px
+        }
+        .css-19jnx18{
+            width: 100%!important;
+        }
+    }
+}
+@media(max-width:765px){
+    .css-1vbvugf-MuiButtonBase-root-MuiButton-root{
+        height: 56px;
+    }
+    .css-10gokx7-MuiFormControl-root{
+        margin-bottom: 10px!important;
+    }
+}
+@media(max-width:600px){
+    header{
+        height:200px;
+        .header-inner{
+            flex-direction: column;
+            .logo{
+                margin-top: -10px;
+            }
+        }
+    }
+}
+@media(max-width:480px){
+    footer, header{
+        .header-inner, .footer-inner{
+            padding: 0 10px;
+        }
+    }
+    header{
+        height: 270px;
+        .header-inner{
+            .logo{
+                margin-top: 0px;
+            }
+            form{
+                margin-right: 0px!important;
+                flex-direction: column;
+                display: flex;
+                button{
+                    width:100px;
+                    margin-left: 0px;
+                }
+                .css-1xdr225-MuiSvgIcon-root{
+                    left: 260px;
+                    top: -110px
+                }
+            }
+        }
+    }
+    .main{
+        padding: 0 10px;
+    }
+    .main .css-o69gx8-MuiCardMedia-root{
+        min-width: 280px;
+        height: 430px;
+    }
+    .main .css-1pprig2-MuiPaper-root-MuiCard-root{
+        width:280px;
+    }
+    .css-i1hrn3-MuiTypography-root{
+        font-size: 30px!important;
+    }
+}
+@media(max-width: 440px){
+    .filter{
+        flex-direction: column;
+        align-items: center;
+        button{
+            width: 92px;
+            margin-bottom: 10px;
+        }
+    }
+    .css-10gokx7-MuiFormControl-root{
+        margin-right: 0px!important;
+    }
+    .css-17ji6ez-MuiCardMedia-root{
+        margin-left: auto!important;
+        margin-right: auto!important;
+    }
+}
